@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "2be8189e-c368-4de0-bfd4-3348803ab844",
+		"name": "microblog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create_post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"123123\",\r\n  \"text\": \"qqqqqqq\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/microblog",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"microblog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_post",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"123123\",\r\n  \"id\": \"8zHXgqVu9JqbI7pgVbY1540199820709\",\r\n  \"text\": \"aaaaaaaaa\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/microblog",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"microblog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rate_post",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"123123\",\r\n  \"id\": \"dnxUUBHTlq1fXbuXHnU1540203404385\",\r\n  \"score\": \"9\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/microblog/rate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"microblog",
+						"rate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
